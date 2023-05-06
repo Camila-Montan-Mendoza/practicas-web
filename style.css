@@ -21,9 +21,6 @@ body {
     height: 230px;
     align-items: center;
     justify-content: flex-start;
-    background-color: blue;
-    /*padding-top: 94px;
-    padding-left: 103px;*/
     box-sizing: border-box;
 }
 
@@ -35,25 +32,28 @@ body {
     top: 8.70%;
     left: 5.36%;
 
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: auto;
+
+    min-width: 150px;
+    max-width: 271px;
     
 }
 
 .centro{
-    justify-content:center;
-    background-color: green;
-
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
 .mockoup{
     flex-basis: 54.01%;
+
+    min-width: 300px;
+    max-width: 938px;
 }
 
 .mockoup img{
-    background-color:burlywood;
     width: 48.85%;    /* ancho */
     height: 62.22%;  /* alto */
 
@@ -62,45 +62,68 @@ body {
     left: 5.16%;
 
     max-width: 100%;
+    min-width: 320px;
     height: auto;
 }
 
 .content{
-    flex-basis: 44.22%;
+    width: 35.36%;    /* ancho */
+    height: 23.98%;  /* alto */
 
-    background-color: rgb(216, 27, 162);
-    
     color: white;
+
+    flex-basis: 680px; 
+
     
 }
 
 .content h1{
-    background-color: rgb(57, 67, 56);
     width: 31.41%;    /* ancho */
     height: 14.39%;  /* alto */
 
     font-size: 53.65px;
     font-family: 'Poppins', sans-serif;
-    margin:0;
+    margin:0 auto;
     
     position: absolute;
     top: 32.03%;
     left: 57.92%;
-    bottom: 55.93%
+    flex-basis: 35.42%; 
 }
 
 .content p{
     font-size: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    width: 36.20%;    /* ancho */
+    height: 10.93%;  /* alto */
+    
+    position: absolute;
+    top: 46.48%;
+    left: 57.92%;
     
 }
 
 .boton{
+    position: absolute;
+    top: 63.50%;
+    left: 57.92%;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.boton button{
     width: 275px;
     height: 75px;
+
     background-color:white;
     border-radius: 55px;
     color:#674BAF;
     border:none;
     font-size: 23px;
 }
+
+.boton button:hover {
+    background-color: #E882E8;
+  }
