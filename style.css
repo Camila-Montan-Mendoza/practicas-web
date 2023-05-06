@@ -1,30 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
 .home{
     width: 100%;    /* ancho */
     height: 100vh;  /* alto */
-    background-color: rgb(109, 48, 179,.30);
+    background-color: #674BAF;
     background-image: url("C:/Users/admin/Documents/SCESI/Web/practicas-web/Fondos/bg-desktop.svg");
     
     background-size: cover;
     background-position: center;
 }
 
-.body {
+body {
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar{
     width: 100%;
     height: 230px;
-    
     align-items: center;
     justify-content: flex-start;
-    background-color: blue;
+    /*background-color: blue;*/
     padding-top: 94px;
     padding-left: 103px;
     box-sizing: border-box;
+}
+
+.logo{
+    display:flex;
 }
 
 .centro{
@@ -33,19 +37,32 @@
 
   }
 
+.mockoup{
+    display: flex;
+}
+
 .content{
     text-align: start;
-    background-color: aquamarine;
+    color: white;
+    
 }
 
 .content h1{
-    font-size: 52px;
-}
-
-.content h2{
-    font-size: 54px;
+    font-size: 53.65px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content p{
     font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton{
+    width: 275px;
+    height: 75px;
+    background-color:white;
+    border-radius: 55px;
+    color:#674BAF;
+    border:none;
+    font-size: 23px;
 }
