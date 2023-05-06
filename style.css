@@ -21,40 +21,78 @@ body {
     height: 230px;
     align-items: center;
     justify-content: flex-start;
-    /*background-color: blue;*/
-    padding-top: 94px;
-    padding-left: 103px;
+    background-color: blue;
+    /*padding-top: 94px;
+    padding-left: 103px;*/
     box-sizing: border-box;
 }
 
 .logo{
-    display:flex;
+    width: 14.11%;    /* ancho */
+    height: 3.89%;  /* alto */
+
+    position: absolute;
+    top: 8.70%;
+    left: 5.36%;
+
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .centro{
-    display: flex;
     justify-content:center;
+    background-color: green;
 
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .mockoup{
-    display: flex;
+    flex-basis: 54.01%;
+}
+
+.mockoup img{
+    background-color:burlywood;
+    width: 48.85%;    /* ancho */
+    height: 62.22%;  /* alto */
+
+    position: absolute;
+    top: 24.44%;
+    left: 5.16%;
+
+    max-width: 100%;
+    height: auto;
 }
 
 .content{
-    text-align: start;
+    flex-basis: 44.22%;
+
+    background-color: rgb(216, 27, 162);
+    
     color: white;
     
 }
 
 .content h1{
+    background-color: rgb(57, 67, 56);
+    width: 31.41%;    /* ancho */
+    height: 14.39%;  /* alto */
+
     font-size: 53.65px;
     font-family: 'Poppins', sans-serif;
+    margin:0;
+    
+    position: absolute;
+    top: 32.03%;
+    left: 57.92%;
+    bottom: 55.93%
 }
 
 .content p{
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .boton{
