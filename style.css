@@ -8,9 +8,6 @@
     
     background-size: cover;
     background-position: center;
-
-    /*display: flex;
-    flex-wrap: wrap;*/
 }
 
 body {
@@ -37,33 +34,23 @@ body {
     top: 8.70%;
     left: 5.36%;
 
-    /*max-width: 100%;*/
     height: auto;
 
-    min-width: 150px;
+    min-width: 200px;
     max-width: 271px;
     
 }
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: auto;*/
-    gap: 3.9%;
-
-    /*margin: 0 auto;/
-    /*padding: 0px;*/
+  
+    gap: 13%;
     
   }
 
 .col-1{
-    /*flex-basis: 54.01%;
-
-    min-width: 300px;
-    max-width: 938px;*/
-
     grid-column: 1 ; /* La primera columna ocupa la primera celda */
     grid-row: 1 ; /* La primera columna ocupa la primera fila */
-    /*background-color: #ddd;*/
 }
 
 .col-1 img{
@@ -80,46 +67,54 @@ body {
 }
 
 .col-2{
-    /*width: 35.36%;    
-    height: 23.98%;  
-
-    color: white;
-
-    flex-basis: 680px; */
-
     grid-column: 2 ; /* La segunda columna ocupa la segunda celda */
     /*background-color: #eee*/
-    grid-row: 1 / span 3;
     color: white;
 
-    
 }
 
-.col-2 h1{
-    /*width: 31.41%;    
-    height: 14.39%;  */
+.col-2:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .col-2:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .col-2:nth-child(1) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
 
+
+.col-2 h1{
     font-size: 53.65px;
     font-family: 'Poppins', sans-serif;
-    /*margin:0 auto;*/
+
+    margin-top: 10.50%;;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    padding: 0px;
     
-    position: absolute;
+    /*position: absolute;
     top: 26.50%;
-    left: 57.92%;
-    /*flex-basis: 35.42%; */
+    left: 57.92%;*/
 }
 
 .col-2 p{
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
+    
+    margin: 0px;
+    padding: 0px;
 
-    /*width: 36.20%;    /* ancho */
-    /*height: 10.93%;  /* alto */
-    
-    position: absolute;
+    /*position: absolute;
     top: 46.48%;
-    left: 57.92%;
-    
+    left: 57.92%;*/
 }
 
 
@@ -133,10 +128,12 @@ body {
     border:none;
     font-size: 23px;
 
+    margin: 0px;
+    padding: 0px;
     
-    position: absolute;
-    top: 61.63%;
-    left: 57.92%;
+    /*position: absolute;
+    margin-top: 3.63%;
+    left: 57.92%;*/
 }
 
 .col-2 button:hover {
