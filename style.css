@@ -8,6 +8,9 @@
     
     background-size: cover;
     background-position: center;
+
+    /*display: flex;
+    flex-wrap: wrap;*/
 }
 
 body {
@@ -22,6 +25,8 @@ body {
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
+
+    min-width: 375px;
 }
 
 .logo{
@@ -39,21 +44,29 @@ body {
     max-width: 271px;
     
 }
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: auto;*/
+    gap: 3.9%;
 
-.centro{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    /*margin: 0 auto;/
+    /*padding: 0px;*/
+    
   }
 
-.mockoup{
-    flex-basis: 54.01%;
+.col-1{
+    /*flex-basis: 54.01%;
 
     min-width: 300px;
-    max-width: 938px;
+    max-width: 938px;*/
+
+    grid-column: 1 ; /* La primera columna ocupa la primera celda */
+    grid-row: 1 ; /* La primera columna ocupa la primera fila */
+    /*background-color: #ddd;*/
 }
 
-.mockoup img{
+.col-1 img{
     width: 48.85%;    /* ancho */
     height: 62.22%;  /* alto */
 
@@ -66,37 +79,42 @@ body {
     height: auto;
 }
 
-.content{
-    width: 35.36%;    /* ancho */
-    height: 23.98%;  /* alto */
+.col-2{
+    /*width: 35.36%;    
+    height: 23.98%;  
 
     color: white;
 
-    flex-basis: 680px; 
+    flex-basis: 680px; */
+
+    grid-column: 2 ; /* La segunda columna ocupa la segunda celda */
+    /*background-color: #eee*/
+    grid-row: 1 / span 3;
+    color: white;
 
     
 }
 
-.content h1{
-    width: 31.41%;    /* ancho */
-    height: 14.39%;  /* alto */
+.col-2 h1{
+    /*width: 31.41%;    
+    height: 14.39%;  */
 
     font-size: 53.65px;
     font-family: 'Poppins', sans-serif;
-    margin:0 auto;
+    /*margin:0 auto;*/
     
     position: absolute;
-    top: 32.03%;
+    top: 26.50%;
     left: 57.92%;
-    flex-basis: 35.42%; 
+    /*flex-basis: 35.42%; */
 }
 
-.content p{
+.col-2 p{
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
 
-    width: 36.20%;    /* ancho */
-    height: 10.93%;  /* alto */
+    /*width: 36.20%;    /* ancho */
+    /*height: 10.93%;  /* alto */
     
     position: absolute;
     top: 46.48%;
@@ -104,16 +122,8 @@ body {
     
 }
 
-.boton{
-    position: absolute;
-    top: 63.50%;
-    left: 57.92%;
 
-    max-width: 100%;
-    height: auto;
-}
-
-.boton button{
+.col-2 button{
     width: 275px;
     height: 75px;
 
@@ -122,8 +132,13 @@ body {
     color:#674BAF;
     border:none;
     font-size: 23px;
+
+    
+    position: absolute;
+    top: 61.63%;
+    left: 57.92%;
 }
 
-.boton button:hover {
+.col-2 button:hover {
     background-color: #E882E8;
   }
