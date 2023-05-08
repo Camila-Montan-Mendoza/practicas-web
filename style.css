@@ -14,7 +14,7 @@ body {
     
     margin: 0px;
     padding: 0px;
-    background-color: #674BAF; 
+    background-color: #674BAF;
 }
 
 .navbar{
@@ -216,13 +216,13 @@ body {
     }
 
     .col-2 h1{
-        font-size: 45px;
+        font-size: 43px;
         text-align: center;
         margin-top: 50%; 
     }
 
     .col-2 p{
-        font-size: 24px;
+        font-size: 23px;
         text-align: center;
         
         margin-right:15%;
@@ -247,7 +247,7 @@ body {
 
     .buttons-container {
         position: absolute;
-        bottom: 0;
+        margin-bottom: 10%;
         top:1465px;
         right:36%;
         display: flex;
