@@ -8,13 +8,13 @@
     
     background-size: cover;
     background-position: center;
-    overflow: hidden; /*para q no aparezca el espacio en blanco al achicar la pantalla*/
 }
 
 body {
     
     margin: 0px;
     padding: 0px;
+    background-color: #674BAF;
 }
 
 .navbar{
@@ -38,7 +38,7 @@ body {
     height: auto;
 
     min-width: 200px;
-    max-width: 271px;
+    max-width: 750px;
     
 }
 .grid-container{
@@ -65,7 +65,7 @@ body {
     left: 5.16%;
 
     max-width: 100%;
-    min-width: 320px;
+    min-width: 500px;
     height: auto;
 }
 
@@ -142,4 +142,117 @@ body {
 
 .col-2 button:hover {
     background-color: #E882E8;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 4.53%;
+    right: 5.89%;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: transparent;
+}
+
+.button1 {
+    background-image: url("Fondos/FaceBlanco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+  
+.button1:hover {
+    background-image: url("Fondos/FaceRosa.png");
+    background-color: transparent;
+}
+
+.button2 {
+    background-image: url("Fondos/twitBlanco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+  
+.button2:hover {
+    background-image: url("Fondos/TwitRosa.png");
+    background-color: transparent;
+}
+
+.button3 {
+    background-image: url("Fondos/InstaBlanco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+  
+.button3:hover {
+    background-image: url("Fondos/InstaRosa.png");
+    background-color: transparent;
+}
+
+@media (max-width: 1064px) {
+    
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+
+    .col-2 h1{
+        font-size: 43px;
+        text-align: center;
+        margin-top: 50%; 
+    }
+
+    .col-2 p{
+        font-size: 23px;
+        text-align: center;
+        
+        margin-right:15%;
+    }
+
+    .col-1 img{
+        top: 15.44%;
+    }
+
+    .logo{
+        top: 5.70%;
+    }
+
+    .col-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-2 button{
+       margin-right:15%;
+    }
+
+    .buttons-container {
+        position: absolute;
+        margin-bottom: 10%;
+        top:1465px;
+        right:36%;
+        display: flex;
+        justify-content: space-between;
+    
+        background-color: transparent;
+    }
   }
