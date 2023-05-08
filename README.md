@@ -28,7 +28,7 @@ Los usuarios deben ser capaces de:
 
 ### Captura de pantalla
 
-![PaginaWeb-TamañoEscritorio](Fondos/Captura de mi pagina web.jpg)
+![PaginaWeb-TamañoEscritorio](Fondos/CapturaEscritorio.jpg)
 ![PaginaWeb-TamañoRedducido](Fondos/Responsive2.jpg)
 ![PaginaWeb-TamañoMovil](Fondos/Movil.jpg)
 
